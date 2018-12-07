@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini-Projects</title>
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="miniproj.css">
+</head>
+<body>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="school.html">School</a>
+    <a href="sports.html">Sports</a>
+    <a href="faf.html">Family</a>
+    <a class="active" href="miniproj.html">Mini-Projects</a>
+    <a href="Calc.html">Calculator</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="mad.html">Mad Libs</a>
+    <!-- I got this from https://www.w3schools.com/howto/howto_js_topnav.asp-->
+</div>
+<br><br>
+<form name="project1">
+    <h1>Temperature Bug</h1>
+    <br><br>
+    Type temperature in fahrenheit:
+    <input name="input1" type="text">
+    <br><br>
+    <img id="weather" src=" " height="100" width="150">
+    <br><br>
+    The season is: <input name="result" type="text" readonly="true">
+    <br><br>
+    <button type="button" onclick="document.project1.result.value=temperaturebug()">FIND SEASON!</button>
+</form>
+<br><br>
+<form name="project2">
+    <h1>Calorie Counter</h1>
+    <br>
+    Choose An Activity:
+    <select id="workList">
+        <option value="eating">Eating</option>
+        <option value="studying">Studying</option>
+        <option value="swimming">Swimming</option>
+        <option value="running">Running</option>
+    </select>
+    <br>
+    Type how long you did your activity in minutes:<input id="long">
+    Calories: <input name="results" type="text" readonly="true">
+    <button type="button" onclick="document.project2.results.value=calCount()">Find Out!!!</button>
+
+</form>
+
+<form name="project3">
+    <h1>Grade Conversion</h1>
+    <br><br>
+    Type in your score to find out your grade:
+    <br>
+    <input name="input1" type="text">
+    <br><br>
+    Your grade is: <input name="result" type="text" readonly="true" style="border-style: none">
+    <br><br>
+    <button type="button" onclick="document.project3.result.value=assignGrade()">Assign Grade!</button>
+</form>
+<br><br><br>
+<form name="XY">
+    <h1>Number Base Converter</h1>
+    Type in Number: <input type="text" name="num1">
+    <br>
+    Type in Base of First Number: <input type="text" name="base">
+    <br>
+    Convert It To Base <input type="text" name="wantedbase">
+    <br>
+    Results: <input type="text" id="result" readonly="true">
+    <button type="button" onclick="document.XY.result.value=XtoY()">Convert It</button>
+</form>
+
+</body>
+</html>

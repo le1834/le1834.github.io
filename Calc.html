@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="Calc.css">
+</head>
+<body>
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="school.html">School</a>
+    <a href="sports.html">Sports</a>
+    <a href="faf.html">Family</a>
+    <a href="miniproj.html">Mini-Projects</a>
+    <a class="active" href="Calc.html">Calculator</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="mad.html">Mad Libs</a>
+    <!-- I got this from https://www.w3schools.com/howto/howto_js_topnav.asp-->
+</div>
+<br><br>
+<form name="calculator" >
+
+    <input name="calcWindow" style="font-size:20px;" type="text" readonly="true" size="100" >
+    <br><br>
+    <button type="button" class="block" onclick="document.calculator.calcWindow.value=''"> Clear </button>
+    <button type="button" class="block" onclick="document.calculator.calcWindow.value=backSpace()"> Backspace </button>
+    <br><br>
+    <button type="button" class="block" value="1" onclick="document.calculator.calcWindow.value+=1">  1  </button>
+    <button type="button" class="block" value="2" onclick="document.calculator.calcWindow.value+=2">  2  </button>
+    <button type="button" class="block" value="3" onclick="document.calculator.calcWindow.value+=3">  3  </button>
+    <button type="button" class="block" value="+" onclick="document.calculator.calcWindow.value+='+'">  +  </button>
+    <br><br>
+    <button type="button" class="block" value="4" onclick="document.calculator.calcWindow.value+=4">  4  </button>
+    <button type="button" class="block" value="5" onclick="document.calculator.calcWindow.value+=5">  5  </button>
+    <button type="button" class="block" value="6" onclick="document.calculator.calcWindow.value+=6">  6  </button>
+    <button type="button" class="block" value="-" onclick="document.calculator.calcWindow.value+='-'">  -  </button>
+    <br><br>
+    <button type="button" class="block" value="7" onclick="document.calculator.calcWindow.value+=7">  7  </button>
+    <button type="button" class="block" value="8" onclick="document.calculator.calcWindow.value+=8">  8  </button>
+    <button type="button" class="block" value="9" onclick="document.calculator.calcWindow.value+=9">  9  </button>
+    <button type="button" class="block" value="*" onclick="document.calculator.calcWindow.value+='*'">  *  </button>
+    <br><br>
+    <button type="button" class="block" value="0" onclick="document.calculator.calcWindow.value='0'">  0  </button>
+    <button type="button" class="block" id="pow" onclick="document.calculator.calcWindow.value+='^'">  ^  </button>
+    <button type="button" class="block" value="/" onclick="document.calculator.calcWindow.value+='/'">  /  </button>
+    <button type="button" class="block" value="=" onclick="document.calculator.calcWindow.value=calculate(document.calculator.calcWindow.value)">  =  </button>
+</form>
+
+</body>
+</html>

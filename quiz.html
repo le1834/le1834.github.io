@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fun QUIZ!!!</title>
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="school.html">School</a>
+    <a href="sports.html">Sports</a>
+    <a href="faf.html">Friends and Family</a>
+    <a href="miniproj.html">Mini-Projects</a>
+    <a href="Calc.html">Calculator</a>
+    <a class="active" href="quiz.html">Quiz</a>
+    <a href="mad.html">Mad Libs</a>
+    <!-- I got this from https://www.w3schools.com/howto/howto_js_topnav.asp-->
+</div>
+<form name="quiz" align="center">
+    <br><br>
+    <img src="img/Aquaman.jpg" height="423" width="284"/><br><br>
+    Question 1: Who is this superhero?
+    <input type="text" name="a1">
+    <br><br><br>
+    Question 2: Which one of these animals is the BEST?<br>
+    <input type="radio" name="a2" value="Fish">Fish<br>
+    <input type="radio" name="a2" value="Panda">Panda<br>
+    <input type="radio" name="a2" value="Penguin">Penguin<br>
+    <input type="radio" name="a2" value="Horse">Horse<br>
+    <br><br>
+    Question 3: Which of the following are my favorite school subjects?<br>
+    <input type="checkbox" name="a3A" value="Math">Math<br>
+    <input type="checkbox" name="a3B" value="Language">Language<br>
+    <input type="checkbox" name="a3C" value="Science">Science<br>
+    <input type="checkbox" name="a3D" value="Social Studies">Social Studies<br>
+    <input type="checkbox" name="a3E" value="English">English<br>
+    <br><br>
+    <img src="img/readers-choice-the-10-most-hated-pokemon-20110502043815190.jpg" height="149" width="250"/><br><br>
+    Question 4: Who does this look like?
+    <input type="text" name="a4">
+    <br><br><br>
+    Question 5: Which one of these foods is the BEST?<br>
+    <input type="radio" name="a5" value="Fettuccine Alfredo">Fettuccine Alfredo<br>
+    <input type="radio" name="a5" value="Rice">Rice<br>
+    <input type="radio" name="a5" value="Pepperoni Pizza">Pepperoni Pizza<br>
+    <input type="radio" name="a5" value="Fried Chicked">Fried Chicken<br>
+    <br><br>
+    Question 6: Which of the following are my favorite words to say?<br>
+    <input type="checkbox" name="a6A" value="Maroon">Maroon<br>
+    <input type="checkbox" name="a6B" value="Flick">Flick<br>
+    <input type="checkbox" name="a6C" value="Crimson">Crimson<br>
+    <input type="checkbox" name="a6D" value="Correct">Correct<br>
+    <input type="checkbox" name="a6E" value="Epic">Epic<br>
+    <input type="checkbox" name="a6F" value="Benevolent">Benevolent<br>
+    <br><br>
+
+
+
+
+    Press CHECK FIRST  <button type="button" onclick="document.quiz.result.value=checkAnswers()">CHECK</button>
+    <button type="button" onclick="document.quiz.feed.value=IDC()">What did you get wrong?</button>
+    <br><br>
+    <input name="result" type="text" readonly="true">
+    <br><br>
+    <input name="feed" type="text" readonly="true" size="125">
+
+
+
+
+</form>
+
+</body>
+</html>

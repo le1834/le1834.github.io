@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="mad.css">
+    <script type="text/javascript">
+
+        function Madd()
+        {
+            var words = [];
+            words.push(document.getElementById('0').value);
+            words.push(document.getElementById('1').value);
+            words.push(document.getElementById('2').value);
+            words.push(document.getElementById('3').value);
+            words.push(document.getElementById('4').value);
+            words.push(document.getElementById('5').value);
+            words.push(document.getElementById('6').value);
+            words.push(document.getElementById('7').value);
+            words.push(document.getElementById('8').value);
+            words.push(document.getElementById('9').value);
+            words.push(document.getElementById('10').value);
+            document.getElementById('final').innerHTML = " " + words[0] +" got a quick " + words[1]+ ". It'll " + words[2] + " around the room, it won't tell you its plan. " +
+                " It's got a " + words[3] + ", hanging out its mouth it's a " + words[4] + " kid. Yeah found a " + words[5] + " in its dad's closet hidden oh in a box of " + words[6] +
+                " things, I don't even know what. But it's " + words[7] + " for you, yeah it's " + words[7] + " for you. All the other " + words[8] + " with the pumped up kicks better "
+                + words[9] + " better " + words[9] + " outrun my " + words[10] +".All the other " + words[8] + " with the pumped up kicks better "
+                + words[9] + " better " + words[9] + " faster than my " + words[10] +"."
+
+        }
+
+    </script>
+
+</head>
+<body>
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="school.html">School</a>
+    <a href="sports.html">Sports</a>
+    <a href="faf.html">Friends and Family</a>
+    <a href="miniproj.html">Mini-Projects</a>
+    <a href="Calc.html">Calculator</a>
+    <a href="quiz.html">Quiz</a>
+    <a class="active" href="mad.html">Mad Libs</a>
+
+    <!-- I got this from https://www.w3schools.com/howto/howto_js_topnav.asp-->
+</div>
+<br><br>
+<h1 align="center">Mad-Libs </h1>
+<form name="Mad" align="center">
+    Name with -'s at the end #1: <input type="text" id="0">
+    <br><br>
+    Body Part #1: <input type="text" id="1">
+    <br><br>
+    Verb #1: <input type="text" id="2">
+    <br><br>
+    Object #1: <input type="text" id="3">
+    <br><br>
+    Job #1: <input type="text"  id="4">
+    <br><br>
+    Object #2: <input type="text" id="5">
+    <br><br>
+    Adjective #1: <input type="text" id="6">
+    <br><br>
+    Verb ending in a -ing #1: <input type="text" id="7">
+    <br><br>
+    Animals plural #1: <input type="text" id="8">
+    <br><br>
+    Verb #2: <input type="text" id="9">
+    <br><br>
+    Object #3: <input type="text" id="10">
+    <br><br>
+    <button type="button" onclick="Madd()">Create</button>
+    <p id="final"></p>
+</form>
+
+</body>
+</html>
